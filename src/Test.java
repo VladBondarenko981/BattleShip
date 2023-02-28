@@ -13,11 +13,13 @@ public class Test {
         for(int i = 0; i < 3; i++) {
             list.add(num + i + 1);
         }
+        ArrayList<String> lllist = new ArrayList<>();
         example2.setLocatedShips(list);
+        example2.setUncorrectPositions(lllist);
         int counter = 0, newCounter = 0;
         example2.createShips();
         while(counter != 9) {
-            System.out.println("***Enter the num between 1 and 10***");
+            System.out.println("***Enter the position. Range[0 - 9][A - J] Example: 4A, 1B, 3C, etc.***");
             counter += example2.checkPushes(sc.next());
             ++newCounter;
         }

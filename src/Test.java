@@ -18,6 +18,7 @@ public class Test {
         example2.setUncorrectPositions(lllist);
         int counter = 0, newCounter = 0;
         example2.createShips();
+        example2.setTable();
         while(counter != 9) {
             System.out.println("***Enter the position. Range[0 - 9][A - J] Example: 4A, 1B, 3C, etc.***");
             counter += example2.checkPushes(sc.next());
